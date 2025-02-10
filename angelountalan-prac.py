@@ -72,7 +72,7 @@
 
 #STRING METHODS
 
-course = 'Python for beginners'
+# course = 'Python for beginners'
 # print (len(course))                                        #para malaman ang length ng value ng variable
 # print (course.lower())
 # print (course.find('f')                                    #kapag wala yung hinahanap -1 lalabas
@@ -87,5 +87,22 @@ course = 'Python for beginners'
 
 
 #ARITHMETIC OPERATIONS
+# print (10 ** 3)                            #+, -, *, ** exponent = n to the power of n, / = float value lalabas meaning may decimal, // = integer whole number lalabas, % yung remainder ng division ang lalabas
+# x = 10
+# x -=3
+# print (x)
 
 
+
+
+
+#OPERATOR PRECEDENCE
+                                #PEMDAS parin ang susundin
+# x = (2+3) * 10 - 3
+# print (x)
+
+
+
+
+
+#MATH FUNCTIONS
