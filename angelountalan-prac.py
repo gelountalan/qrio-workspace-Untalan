@@ -1,4 +1,5 @@
-# # variables             int = whole number, float = decimal number, string = text boolean = True or False
+# VARIABLES       
+#                  int = whole number, float = decimal number, string = text boolean = True or False
 # #price = 10
 # #price = 20   # eto ang lalabas kasi ito ang last na line na binasa
 
@@ -13,6 +14,8 @@
 # print(is_new)
 
 
+#RECEIVING INPUT
+
 #name = input('what is your name? ')     #input para mapa print yung nasa loob ng ''
 #print ('Hi ' + name)
 
@@ -25,6 +28,9 @@
 # print (name +' likes the color ' +color )
 
 
+
+#TYPE CONVERSION
+
 #birth_year = input ('Brith year: ')
 
 #age = 2025 - int(birth_year)    #kaya may int kase we are subtracting int '2025' sa string 'birth_year'
@@ -35,7 +41,14 @@
                                 #tuwing gagamit ng input() function, laging string ang ma babasa, if numerical value ang gusto mapa labas, tsaka gagamit ng sting or float
 
 #exercise
-weight_lbs = input ('what is your weight in lbs?: ')
-weight_kg = int(weight_lbs) * .453
-print ('Your weight in kg is: ' + str(weight_kg) + ('kg'))
+# weight_lbs = input ('what is your weight in lbs?: ')
+# weight_kg = int(weight_lbs) * .453
+# print ('Your weight in kg is: ' + str(weight_kg) + ('kg'))
 
+
+
+
+#STRINGS
+
+course = 'Python for Beginners'
+print (course)
