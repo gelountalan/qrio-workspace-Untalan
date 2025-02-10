@@ -50,5 +50,42 @@
 
 #STRINGS
 
-course = 'Python for Beginners'
-print (course)
+# course = "Python's for Beginners"   # '' para magamit ang "" and vice versa pero kapag ginagamit parehas need ay """ """" (triple quote)
+# print (course[1:-1])                  # 0: = pinaka unang letter hanngang dulo, pag -1 ang una, sa pinaka last ang start 
+                                    # [1:-1] hindi kasama ang pinaka last letter (ython's for Beginner)
+
+
+
+
+
+
+#FORMATTED STRINGS
+
+# first_name = 'Angelo'
+# last_name = 'Untalan' 
+# message = f'{first_name} {last_name} is a coder'      #dito na gamit ang fiormatted strings para mas malinis ang code
+# print (message) 
+
+
+
+
+
+#STRING METHODS
+
+course = 'Python for beginners'
+# print (len(course))                                        #para malaman ang length ng value ng variable
+# print (course.lower())
+# print (course.find('f')                                    #kapag wala yung hinahanap -1 lalabas
+# print (course.replace('beginners', 'not beginners'))       #case sensitive ang python kaya dapat double check lagi
+# print ('Python' in course)                                   # in = boolean value = do we have it or not. TRUE OR FALSE
+
+
+
+
+
+
+
+
+#ARITHMETIC OPERATIONS
+
+
