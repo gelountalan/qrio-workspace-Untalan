@@ -106,3 +106,20 @@
 
 
 #MATH FUNCTIONS
+
+# import math
+
+# x = 12.6
+
+# print(math.floor(2.9))       #ceil = ceiling, para ma round pa taas
+# print(math.floor(x))           #floor = para ma round off sa pinaka mababa
+# x = 2.9
+# print(round(x))           #para ma round off yung value
+# print(abs(-2.9))          # para maging absolute value = laging magiging positive
+
+
+
+
+
+#IF STATEMENT
+
