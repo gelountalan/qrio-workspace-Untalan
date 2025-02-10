@@ -192,16 +192,82 @@
 
 #WEIGHT CONVERTER PROGRAM   
 
-weight = int(input ("Weight: "))
-symbol = input ("(L)bs or (K)g:")
+# weight = int(input ("Weight: "))              #int() para maging integet ang value nung nasa loob kase i mumultiply siya
+# symbol = input ("(L)bs or (K)g:")
 
-if symbol.upper() == "L":
-    converted = weight * 0.45
-    print(f"your weight is {converted} Kilos")
+# if symbol.upper() == "L":                     #.upper() == "L" para maging uppercase lahat ng ilalagay sa input
+#     converted = weight * 0.45
+#     print(f"your weight is {converted} Kilos")
 
-else:
-    converted = weight // 0.45
-    print (f"your weight is {converted} Lbs")
+# else:
+#     converted = weight // 0.45
+#     print (f"your weight is {converted} Lbs")
+
+
+
+
+
+#WHILE LOOPS
+
+# i = 1 
+
+# while i <= 5:
+#     print('*' * i)
+#     i = i + 1                         #pag hindi ginawa to, i will be 1 forever kaya magiging infinite loop
+# print("Done")
+
+
+#EXERCISE GUESSING GAME
+
+
+# secret_number = 17
+# guess_count = 0
+# guess_limit = 3
+
+# while guess_count < guess_limit:
+#     guess = int(input('Guess the secret number: '))
+#     guess_count += 1
+
+#     if guess == secret_number:
+#         print (" you've guessed the secret number!")
+#         break
+# else:
+#     print('no more tries')
+ 
+
+
+#BUILDING A CAR GAME
+
+command = ""                                # kaya " " kasi depende kung ano ang i tytype, walang exact value yung variable
+started = False
+
+
+
+while True: #command != "quit":         pinalitan ng TRUE kase it makes sure the loop always runs until we choose to stop it with break
+    command = input("> ").lower()           #.lower() para hindi paulit ulit yung .lower sa comamnd
+    if command == "start":
+        if started:
+            print ("the car is already started")
+        else:
+            started = True
+            print ("car started...")            #need i double check kung naka aling yung print kasi minsan magulo hahah
+    elif command== "stop":
+         if not started:
+            print("the car is already at stop.")
+         else:
+            started = False
+            print ("the car has stopped")
+    elif command == "help":
+        print ('''  
+        start - to start the car
+        stop - to stop the car 
+        quit - to quit  ''' )
+    elif command == "quit":
+        print (" thank you for using!")
+        break
+        
+    else: 
+        print ("sorry i dont understand that.")
 
 
 
