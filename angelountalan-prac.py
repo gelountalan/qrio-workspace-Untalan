@@ -123,3 +123,86 @@
 
 #IF STATEMENT
 
+# is_hot = True                      #kapag true at false = its a hot day, kapag false at true = cold day, kapag parehas false, else ang babasahin
+# is_cold = True                    #kapag parehas true, ang babasahin ay yung is_hot kase true.
+
+# if is_hot:
+#     print ('is a hot day')
+#     print('drink plenty of water')
+
+# elif is_cold:
+#     print("it's a cold day")
+#     print("wear come warm clothes")
+
+# else:
+#     print("it's a good day")
+# print('enjoy your day')
+
+
+#EXERCISE
+
+# price = 1000000
+# good_credit = True
+
+
+# if good_credit:
+#    down_payment = .1 * price
+
+# else:
+#     down_payment = .2 * price
+
+# print (f"Your total down payment is ${down_payment}")
+
+
+    
+
+
+#LOGICAL OPERATORS
+                        # AND = both, OR = atleast one, NOT =  
+
+# good_credit = True
+# has_criminal_record = True
+
+
+# if good_credit and not has_criminal_record:
+#     print('eligable for loan')
+
+# else:
+#     print ('not eligable for loan')
+
+
+
+
+#COMPARISON OPERATORS
+
+# name = "gelo"                               # WAG KALILIMUTAN NA KAPAG STRING ANG VALUE NG VARIALE LAGING MAY QUOTATION ""
+
+# if len(name) < 3:
+#     print('name must be atleast 3 characters')
+
+# elif len(name) > 50:
+#     print ("name can be a maximum of 50 characters ")
+
+# else:
+#     print("name looks good")
+
+
+
+
+
+#WEIGHT CONVERTER PROGRAM   
+
+weight = int(input ("Weight: "))
+symbol = input ("(L)bs or (K)g:")
+
+if symbol.upper() == "L":
+    converted = weight * 0.45
+    print(f"your weight is {converted} Kilos")
+
+else:
+    converted = weight // 0.45
+    print (f"your weight is {converted} Lbs")
+
+
+
+
