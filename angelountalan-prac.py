@@ -269,6 +269,6 @@ while True: #command != "quit":         pinalitan ng TRUE kase it makes sure the
     else: 
         print ("sorry i dont understand that.")
 
-#asdasd
+#test kung mag rereflect
 
 
