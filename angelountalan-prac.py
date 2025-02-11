@@ -236,39 +236,70 @@
  
 
 
+
+
+
 #BUILDING A CAR GAME
 
-command = ""                                # kaya " " kasi depende kung ano ang i tytype, walang exact value yung variable
-started = False
+
+
+# command = ""                                # kaya " " kasi depende kung ano ang i tytype, walang exact value yung variable
+# started = False
 
 
 
-while True: #command != "quit":         pinalitan ng TRUE kase it makes sure the loop always runs until we choose to stop it with break
-    command = input("> ").lower()           #.lower() para hindi paulit ulit yung .lower sa comamnd
-    if command == "start":
-        if started:
-            print ("the car is already started")
-        else:
-            started = True
-            print ("car started...")            #need i double check kung naka aling yung print kasi minsan magulo hahah
-    elif command== "stop":
-         if not started:
-            print("the car is already at stop.")
-         else:
-            started = False
-            print ("the car has stopped")
-    elif command == "help":
-        print ('''  
-        start - to start the car
-        stop - to stop the car 
-        quit - to quit  ''' )
-    elif command == "quit":
-        print (" thank you for using!")
-        break
+# while True: #command != "quit":         pinalitan ng TRUE kase it makes sure the loop always runs until we choose to stop it with break
+#     command = input("> ").lower()           #.lower() para hindi paulit ulit yung .lower sa comamnd
+#     if command == "start":
+#         if started:
+#             print ("the car is already started")
+#         else:
+#             started = True
+#             print ("car started...")            #need i double check kung naka aling yung print kasi minsan magulo hahah
+#     elif command== "stop":
+#          if not started:
+#             print("the car is already at stop.")
+#          else:
+#             started = False
+#             print ("the car has stopped")
+#     elif command == "help":
+#         print ('''  
+#         start - to start the car
+#         stop - to stop the car 
+#         quit - to quit  ''' )
+#     elif command == "quit":
+#         print (" thank you for using!")
+#         break
         
-    else: 
-        print ("sorry i dont understand that.")
-
-#test kung mag rereflect
+#     else: 
+#         print ("sorry i dont understand that.")
 
 
+
+
+
+
+#FOR LOOP
+
+# for item in ["mosh", "john", 'sarah']:   "python = p y t h o n"        #for = mag hohold ng 1 variable character at a time 
+#     print (item)
+
+
+# for item in range (10):
+#     item = item + 1                     #para hindi mag start sa zero
+#     print (item)
+
+
+
+# for item in range (5, 10, 2):    # 5 start tas skip count by 2 hanggang umabot or before 10
+#     print (item)
+
+
+# EXERCISE
+
+prices = [10, 20, 30]
+
+total = 0
+for price in prices:
+    total += price                     #total = total + price dapat pero pina ikli
+print (f"total is: {total}")
