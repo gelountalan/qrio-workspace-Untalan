@@ -297,9 +297,56 @@
 
 # EXERCISE
 
-prices = [10, 20, 30]
+# prices = [10, 20, 30]
 
-total = 0
-for price in prices:
-    total += price                     #total = total + price dapat pero pina ikli
-print (f"total is: {total}")
+# total = 0                               #parang nag seserve as piggybank
+# for price in prices:
+#     total += price                     #total = total + price dapat pero pina ikli
+# print (f"total is: {total}")
+
+
+
+
+
+
+# NESTED LOOPS                          adding one loop to another loop
+
+
+# for x in range (4):                 #0000111122223333
+#     for y in range (4):             #0123012301230123
+#         print (f"({x},{y})")            
+
+
+
+# EXERCISE medj mahirap
+
+
+# number = [5, 2, 5, 2, 2]                  
+
+# for x_count in number:
+#     output = ""
+#     for count in range(x_count):
+#         output += "L"
+#     print(output)
+
+
+
+
+
+#Lists
+
+# names = ["john", "bob", "mosh", "sarah", "mary"]
+# names [0] = "jon"                      #para ma rename tapos 0 kasi si john ang i rerename
+# print (names)                       
+# print (names [0:4])               #para ma print kung hanggang san lang 
+
+
+#EXERCISE                   # pang kuha ng pinaka mataas na number
+
+# numbers = [5, 2, 7, 23, 9, 1]         
+# max = numbers[0]
+# for number in numbers:
+#     if number > max:
+#         max = number
+# print (max)
+
