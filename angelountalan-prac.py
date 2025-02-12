@@ -378,7 +378,7 @@
 #LIST METHODS
 
 
-numbers = [1,1,45,2,67,3]
+# numbers = [1,1,45,2,67,3]
 # numbers.insert (1, 50)                  #pang dagdag sa tabi nung pang 1 na value
 # numbers.append (20)                 #para madagdag sa dulo
 # print (numbers)                         #.pop pang tanggal ng dulong value, madami pa need i explore sa .
@@ -396,4 +396,65 @@ numbers = [1,1,45,2,67,3]
 
 #TUPLES
 
+# numbers = (1,2,3)                   #hindi na pwede ma modify kasi naka tuple ()
+# print(numbers [2])
 
+
+
+
+
+#UNPACKING  
+
+# coordinates = (1,2,3)
+# x, y, z = coordinates               #pwede gamitin para mas maikli ang code, pwede rin sa lists []
+# print(z, y, x)
+
+
+
+
+
+
+# DICTIONARIES
+                                    #PARANG SA SQL ATA BASTA YUNG SA DBEAVER
+# customer = {
+#     "name": "angelo untalan",
+#     "age": "22",
+#     "is_verified": True
+# }
+
+# # print(customer["age"])                  #cina callout lang yung key ("name", "age") sa dictionary
+# # print (customer.get("name"))               #pwede rin ganto
+# # print (customer.get("birthdate", "October 17, 2025")) #pwede rin to pang dagdag sa dictionary
+
+# customer["name"] = "ANGELO UNTALAN"            #pang bago sa naka record kasi ang unang value ay angelo untalan lang naging ANGELO UNTALAN dahil binago neto
+# print(customer["name"])
+
+
+# EXERCISE
+
+# phone = input ("Phone: ")
+# digits = {
+#         "1": "One",
+#         "2": "Two",
+#         "3": "Three",
+#         "4": "Four"
+
+# }
+
+# output = ""
+# for character in phone:
+#     output += digits.get(character, "!") + " "
+# print (output)
+   
+
+
+#FUNCTIONS
+
+def greet_user():                       #def = defining a function, greet_user yung dine-define
+    print("Hi there!")
+    print("Welcome")
+
+    
+print("Start")
+greet_user()
+print("Finish")
