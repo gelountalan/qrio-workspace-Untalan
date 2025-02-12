@@ -350,3 +350,50 @@
 #         max = number
 # print (max)
 
+
+
+
+
+#2D LISTS
+
+# matrix = [
+
+#     [1,2,3],
+#     [4,5,6],
+#     [7,8,9],
+# ]
+
+# for row in matrix:                    #para print lahat isa isa ang nasa loob ng matrix
+#     for item in row:
+#         print (item)
+
+# print (matrix[0])                   # [1,2,3]
+# print (matrix[0][2])                  # 3 kasi nag start sa 0 ang bilang
+
+
+
+
+
+
+#LIST METHODS
+
+
+numbers = [1,1,45,2,67,3]
+# numbers.insert (1, 50)                  #pang dagdag sa tabi nung pang 1 na value
+# numbers.append (20)                 #para madagdag sa dulo
+# print (numbers)                         #.pop pang tanggal ng dulong value, madami pa need i explore sa .
+# print(50 in numbers)                        #falase kase gugamit ng boolean tsaka wala sa list yung 50
+
+# uniques = []                              #pang tanggal ng duplicates
+# for number in numbers:
+#     if number not in uniques:
+#        uniques.append(number)
+# print (uniques)
+
+
+
+
+
+#TUPLES
+
+
