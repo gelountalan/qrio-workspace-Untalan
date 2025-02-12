@@ -1,38 +1,68 @@
-create schema qrio;
-create user admin with password 'admin';
-alter user admin with superuser;
+# CRUD operations
 
-drop table person;
-
-create table person (
-	id SERIAL primary key,
-	firstname VARCHAR(100) not null,
-	lastname VARCHAR(100) not null,
-	age INT,
-	active bool default true
-)
+# Create
+# Read
+# Update
+# Delete
+import psycopg2
 
 
--- CREATE
-insert into person (firstname, lastname, age)
-values ('gelo', 'aguinaldo', 22);
+def create_person(conn, firstname, lastname, age):
+    cursor = conn.cursor()
+    cursor.execute("INSERT INTO person (firstname, lastname, age) VALUES (%s, %s, %s)", (firstname, lastname, age))
+    conn.commit()
+    cursor.close()
+
+def read_all_persons(conn):
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM person")
+    persons = cursor.fetchall()
+    cursor.close()
+    return persons
+
+def read_person(conn, person_id):
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM person WHERE id = %s", (person_id,))
+    person = cursor.fetchone()
+    cursor.close()
+    return person
+
+def update_person(conn, person_id, person):
+    cursor = conn.cursor()
+    cursor.execute(
+        "UPDATE person SET firstname = %s, lastname = %s, age = %s WHERE id = %s",
+        (person['firstname'], person['lastname'], person['age'], person_id)
+    )
+    conn.commit()
+    cursor.close()
+
+def delete_person(conn, person_id):
+    cursor = conn.cursor()
+    cursor.execute("DELETE FROM person WHERE id = %s", (person_id,))
+    conn.commit()
+    cursor.close()
 
 
--- READ
-select * from person;
+if __name__ == "__main__":
+    conn = psycopg2.connect(
+        host="localhost",
+        database="postgres",
+        user="angelountalan",
+        password="admin"
+    )
 
+    # create_person(conn, "John", "Doe", 30)
+    # persons = read_all_persons(conn)
+    # print(persons)
 
--- UPDATE
-update person
-set AGE = 23
-where id = 1;
+    # print(persons[0][1])
 
--- DELETE
-delete from person where id = 3;
+    # readperson = read_person(conn, 1) 
+    # print(readperson)
+    
+    # deleteperson = delete_person (conn, 2)
+    # print(deleteperson)
 
+updateperson = update_person(conn, 4, {'firstname': 'ANGELO', 'lastname': 'UNTALAN', 'age': '35'})
+print(updateperson)
 
-
-
-
-
-#di nag save
